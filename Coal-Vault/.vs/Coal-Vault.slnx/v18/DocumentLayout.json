@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\SEM 04\\LABS\\Computer Organization \u0026 Assembly Language\\vault-system-asm\\Coal-Vault\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9D66A532-E6BE-4CC9-B198-8C9F07309B85}|Coal-Vault.vcxproj|D:\\SEM 04\\LABS\\Computer Organization \u0026 Assembly Language\\vault-system-asm\\Coal-Vault\\vault_data.asm||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9D66A532-E6BE-4CC9-B198-8C9F07309B85}|Coal-Vault.vcxproj|solutionrelative:vault_data.asm||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D66A532-E6BE-4CC9-B198-8C9F07309B85}|Coal-Vault.vcxproj|D:\\SEM 04\\LABS\\Computer Organization \u0026 Assembly Language\\vault-system-asm\\Coal-Vault\\vault_auth.asm||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9D66A532-E6BE-4CC9-B198-8C9F07309B85}|Coal-Vault.vcxproj|solutionrelative:vault_auth.asm||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D66A532-E6BE-4CC9-B198-8C9F07309B85}|Coal-Vault.vcxproj|D:\\SEM 04\\LABS\\Computer Organization \u0026 Assembly Language\\vault-system-asm\\Coal-Vault\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9D66A532-E6BE-4CC9-B198-8C9F07309B85}|Coal-Vault.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D66A532-E6BE-4CC9-B198-8C9F07309B85}|Coal-Vault.vcxproj|D:\\SEM 04\\LABS\\Computer Organization \u0026 Assembly Language\\vault-system-asm\\Coal-Vault\\vault_gui.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9D66A532-E6BE-4CC9-B198-8C9F07309B85}|Coal-Vault.vcxproj|solutionrelative:vault_gui.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D66A532-E6BE-4CC9-B198-8C9F07309B85}|Coal-Vault.vcxproj|D:\\SEM 04\\LABS\\Computer Organization \u0026 Assembly Language\\vault-system-asm\\Coal-Vault\\vault_gui.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9D66A532-E6BE-4CC9-B198-8C9F07309B85}|Coal-Vault.vcxproj|solutionrelative:vault_gui.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D66A532-E6BE-4CC9-B198-8C9F07309B85}|Coal-Vault.vcxproj|D:\\SEM 04\\LABS\\Computer Organization \u0026 Assembly Language\\vault-system-asm\\Coal-Vault\\vault_exports.asm||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9D66A532-E6BE-4CC9-B198-8C9F07309B85}|Coal-Vault.vcxproj|solutionrelative:vault_exports.asm||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D66A532-E6BE-4CC9-B198-8C9F07309B85}|Coal-Vault.vcxproj|D:\\SEM 04\\LABS\\Computer Organization \u0026 Assembly Language\\vault-system-asm\\Coal-Vault\\vault_file.asm||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9D66A532-E6BE-4CC9-B198-8C9F07309B85}|Coal-Vault.vcxproj|solutionrelative:vault_file.asm||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D66A532-E6BE-4CC9-B198-8C9F07309B85}|Coal-Vault.vcxproj|D:\\SEM 04\\LABS\\Computer Organization \u0026 Assembly Language\\vault-system-asm\\Coal-Vault\\vault_items.asm||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9D66A532-E6BE-4CC9-B198-8C9F07309B85}|Coal-Vault.vcxproj|solutionrelative:vault_items.asm||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D66A532-E6BE-4CC9-B198-8C9F07309B85}|Coal-Vault.vcxproj|D:\\SEM 04\\LABS\\Computer Organization \u0026 Assembly Language\\vault-system-asm\\Coal-Vault\\vault_txtfile.asm||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9D66A532-E6BE-4CC9-B198-8C9F07309B85}|Coal-Vault.vcxproj|solutionrelative:vault_txtfile.asm||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D66A532-E6BE-4CC9-B198-8C9F07309B85}|Coal-Vault.vcxproj|D:\\SEM 04\\LABS\\Computer Organization \u0026 Assembly Language\\vault-system-asm\\Coal-Vault\\vault_email.asm||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9D66A532-E6BE-4CC9-B198-8C9F07309B85}|Coal-Vault.vcxproj|solutionrelative:vault_email.asm||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "vault_gui.h",
+              "DocumentMoniker": "D:\\SEM 04\\LABS\\Computer Organization \u0026 Assembly Language\\vault-system-asm\\Coal-Vault\\vault_gui.h",
+              "RelativeDocumentMoniker": "vault_gui.h",
+              "ToolTip": "D:\\SEM 04\\LABS\\Computer Organization \u0026 Assembly Language\\vault-system-asm\\Coal-Vault\\vault_gui.h",
+              "RelativeToolTip": "vault_gui.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-05-08T07:31:49.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "vault_gui.cpp",
+              "DocumentMoniker": "D:\\SEM 04\\LABS\\Computer Organization \u0026 Assembly Language\\vault-system-asm\\Coal-Vault\\vault_gui.cpp",
+              "RelativeDocumentMoniker": "vault_gui.cpp",
+              "ToolTip": "D:\\SEM 04\\LABS\\Computer Organization \u0026 Assembly Language\\vault-system-asm\\Coal-Vault\\vault_gui.cpp",
+              "RelativeToolTip": "vault_gui.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-05-08T07:31:35.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\SEM 04\\LABS\\Computer Organization \u0026 Assembly Language\\vault-system-asm\\Coal-Vault\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "D:\\SEM 04\\LABS\\Computer Organization \u0026 Assembly Language\\vault-system-asm\\Coal-Vault\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-05-08T07:21:03.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "vault_file.asm",
+              "DocumentMoniker": "D:\\SEM 04\\LABS\\Computer Organization \u0026 Assembly Language\\vault-system-asm\\Coal-Vault\\vault_file.asm",
+              "RelativeDocumentMoniker": "vault_file.asm",
+              "ToolTip": "D:\\SEM 04\\LABS\\Computer Organization \u0026 Assembly Language\\vault-system-asm\\Coal-Vault\\vault_file.asm",
+              "RelativeToolTip": "vault_file.asm",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-08T07:12:18.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "vault_txtfile.asm",
+              "DocumentMoniker": "D:\\SEM 04\\LABS\\Computer Organization \u0026 Assembly Language\\vault-system-asm\\Coal-Vault\\vault_txtfile.asm",
+              "RelativeDocumentMoniker": "vault_txtfile.asm",
+              "ToolTip": "D:\\SEM 04\\LABS\\Computer Organization \u0026 Assembly Language\\vault-system-asm\\Coal-Vault\\vault_txtfile.asm",
+              "RelativeToolTip": "vault_txtfile.asm",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-08T07:12:04.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "vault_exports.asm",
+              "DocumentMoniker": "D:\\SEM 04\\LABS\\Computer Organization \u0026 Assembly Language\\vault-system-asm\\Coal-Vault\\vault_exports.asm",
+              "RelativeDocumentMoniker": "vault_exports.asm",
+              "ToolTip": "D:\\SEM 04\\LABS\\Computer Organization \u0026 Assembly Language\\vault-system-asm\\Coal-Vault\\vault_exports.asm",
+              "RelativeToolTip": "vault_exports.asm",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-08T07:11:47.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "vault_items.asm",
+              "DocumentMoniker": "D:\\SEM 04\\LABS\\Computer Organization \u0026 Assembly Language\\vault-system-asm\\Coal-Vault\\vault_items.asm",
+              "RelativeDocumentMoniker": "vault_items.asm",
+              "ToolTip": "D:\\SEM 04\\LABS\\Computer Organization \u0026 Assembly Language\\vault-system-asm\\Coal-Vault\\vault_items.asm",
+              "RelativeToolTip": "vault_items.asm",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-08T07:11:31.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "vault_email.asm",
+              "DocumentMoniker": "D:\\SEM 04\\LABS\\Computer Organization \u0026 Assembly Language\\vault-system-asm\\Coal-Vault\\vault_email.asm",
+              "RelativeDocumentMoniker": "vault_email.asm",
+              "ToolTip": "D:\\SEM 04\\LABS\\Computer Organization \u0026 Assembly Language\\vault-system-asm\\Coal-Vault\\vault_email.asm",
+              "RelativeToolTip": "vault_email.asm",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-08T07:11:17.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "vault_auth.asm",
+              "DocumentMoniker": "D:\\SEM 04\\LABS\\Computer Organization \u0026 Assembly Language\\vault-system-asm\\Coal-Vault\\vault_auth.asm",
+              "RelativeDocumentMoniker": "vault_auth.asm",
+              "ToolTip": "D:\\SEM 04\\LABS\\Computer Organization \u0026 Assembly Language\\vault-system-asm\\Coal-Vault\\vault_auth.asm",
+              "RelativeToolTip": "vault_auth.asm",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-08T07:11:02.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "vault_data.asm",
+              "DocumentMoniker": "D:\\SEM 04\\LABS\\Computer Organization \u0026 Assembly Language\\vault-system-asm\\Coal-Vault\\vault_data.asm",
+              "RelativeDocumentMoniker": "vault_data.asm",
+              "ToolTip": "D:\\SEM 04\\LABS\\Computer Organization \u0026 Assembly Language\\vault-system-asm\\Coal-Vault\\vault_data.asm",
+              "RelativeToolTip": "vault_data.asm",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-08T07:10:45.229Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

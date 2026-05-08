@@ -1,0 +1,3 @@
+﻿  Assembling vault_auth.asm...
+vault_auth.asm(1): error A2088: END directive required at end of file
+C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Microsoft\VC\v180\BuildCustomizations\masm.targets(70,5): error MSB3721: The command "ml.exe /c /nologo /EP /Zi /Fo"Coal-Vault\Debug\vault_auth.obj" /I "C:\irvine" /W3 /errorReport:prompt  /Tavault_auth.asm" exited with code 1.
