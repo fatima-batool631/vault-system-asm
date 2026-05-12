@@ -1,4 +1,4 @@
-; ============================================================
+﻿; ============================================================
 ;  vault_items.asm  -  Item Management Module
 ;  Vault Management System  |  COAL Project
 ;  Platform  : Win32 (x86), MASM, Irvine32
@@ -139,7 +139,7 @@ _AddItem PROC
     PUSHAD                  ; saves all GP registers; EAX slot at [ESP+28]
 
     ; --- guard: full? ---------------------------------------
-    MOV  EBX, DWORD PTR [header + HDR_ITEMCOUNT]
+    MOV  EBX, [header + HDR_ITEMCOUNT]
     CMP  EBX, MAX_ITEMS
     JGE  AddItem_Full
 
@@ -160,7 +160,7 @@ _AddItem PROC
     CALL CopyStringFixed
 
     ; --- reload base ptr (EDI was advanced by CopyStringFixed)
-    MOV  EBX, DWORD PTR [header + HDR_ITEMCOUNT]
+    MOV  EBX, [header + HDR_ITEMCOUNT]
     CALL GetItemPtr
     MOV  EDI, EAX
 
@@ -213,7 +213,7 @@ _DeleteItem PROC
     MOV  EBP, ESP
     PUSHAD
 
-    MOV  ECX, DWORD PTR [header + HDR_ITEMCOUNT]
+    MOV  ECX, [header + HDR_ITEMCOUNT]
     TEST ECX, ECX
     JZ   Del_NotFound       ; empty vault
 
@@ -310,7 +310,7 @@ _SearchItem PROC
     MOV  EBP, ESP
     PUSHAD
 
-    MOV  ECX, DWORD PTR [header + HDR_ITEMCOUNT]
+    MOV  ECX, [header + HDR_ITEMCOUNT]
     TEST ECX, ECX
     JZ   Srch_NotFound
 
@@ -362,4 +362,3 @@ PUBLIC _DeleteItem
 PUBLIC _SearchItem
 
 END
-

@@ -1,4 +1,4 @@
-; ============================================================
+﻿; ============================================================
 ;  vault_items.asm  -  Item Management Module
 ;  Vault Management System  |  COAL Project
 ;  Platform  : Win32 (x86), MASM, Irvine32
@@ -362,4 +362,3 @@ PUBLIC _DeleteItem
 PUBLIC _SearchItem
 
 END
-

@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Coal-Vault.vcxproj" />
+  <Project Path="Coal-Vault.vcxproj" Id="9d66a532-e6be-4cc9-b198-8c9f07309b85" />
 </Solution>

@@ -1,3 +1,5 @@
-﻿  Assembling vault_auth.asm...
-vault_auth.asm(1): error A2088: END directive required at end of file
-C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Microsoft\VC\v180\BuildCustomizations\masm.targets(70,5): error MSB3721: The command "ml.exe /c /nologo /EP /Zi /Fo"Coal-Vault\Debug\vault_auth.obj" /I "C:\irvine" /W3 /errorReport:prompt  /Tavault_auth.asm" exited with code 1.
+﻿vault_items.obj : error LNK2019: unresolved external symbol _header referenced in function __AddItem@0
+vault_items.obj : error LNK2019: unresolved external symbol _items referenced in function _GetItemPtr@0
+vault_items.obj : error LNK2019: unresolved external symbol _dirtyFlag referenced in function __AddItem@0
+MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol _main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+D:\SEM 04\LABS\Computer Organization & Assembly Language\vault-system-asm\Coal-Vault\Debug\Coal-Vault.exe : fatal error LNK1120: 4 unresolved externals
