@@ -71,9 +71,10 @@
               "RelativeDocumentMoniker": "vault_data_test.asm",
               "ToolTip": "C:\\Users\\rasib\\source\\repos\\vault-system-asm\\Coal-Vault\\vault_data_test.asm",
               "RelativeToolTip": "vault_data_test.asm",
-              "ViewState": "AgIAAC0AAAAAAAAAAABBwGEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAxwAUBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-05-14T09:41:30.481Z"
+              "WhenOpened": "2026-05-14T09:41:30.481Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -96,7 +97,7 @@
               "RelativeDocumentMoniker": "vault_data.asm",
               "ToolTip": "C:\\Users\\rasib\\source\\repos\\vault-system-asm\\Coal-Vault\\vault_data.asm",
               "RelativeToolTip": "vault_data.asm",
-              "ViewState": "AgIAAD4AAAAAAAAAAABBwDcAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAxwDoAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-05-12T12:02:40.071Z",
               "EditorCaption": ""
