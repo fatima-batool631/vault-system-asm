@@ -1,0 +1,261 @@
+﻿INCLUDE Irvine32.inc
+
+; Constants (duplicated from vault_data.asm)
+EMAIL_SIZE      EQU 64
+NAME_SIZE       EQU 64
+NOTES_SIZE      EQU 128
+PATH_SIZE       EQU 128
+MAX_ITEMS       EQU 100
+MAX_TXT_FILES   EQU 50
+
+; Structures (duplicated from vault_data.asm)
+AccountHeader STRUCT
+    email           BYTE EMAIL_SIZE  DUP(?)
+    pin             DWORD ?
+    backupCode      DWORD ?
+    itemCount       DWORD ?
+    txtCount        DWORD ?
+    pinAttempts     DWORD ?
+    backupAttempts  DWORD ?
+    reserved        BYTE 16 DUP(?)
+AccountHeader ENDS
+
+Item STRUCT
+    id          DWORD ?
+    name        BYTE NAME_SIZE  DUP(?)
+    quantity    DWORD ?
+    notes       BYTE NOTES_SIZE DUP(?)
+Item ENDS
+
+TxtFile STRUCT
+    fileID      DWORD ?
+    filename    BYTE NAME_SIZE DUP(?)
+    path        BYTE PATH_SIZE DUP(?)
+    linkedID    DWORD ?
+TxtFile ENDS
+
+.DATA
+    testEmail       BYTE "test@example.com", 0
+    testName        BYTE "Test Item", 0
+    testNotes       BYTE "This is a test note", 0
+    testFilename    BYTE "testfile.txt", 0
+    testPath        BYTE "C:\\vault\\testfile.txt", 0
+
+    newline         BYTE 0Dh, 0Ah, 0
+    headerMsg       BYTE "=== VAULT DATA TEST ===", 0Dh, 0Ah, 0
+    emailMsg        BYTE "Current Email: ", 0
+    pinMsg          BYTE "PIN: ", 0
+    backupMsg       BYTE "Backup Code: ", 0
+    itemCountMsg    BYTE "Item Count: ", 0
+    txtCountMsg     BYTE "Text File Count: ", 0
+    authMsg         BYTE "Authenticated: ", 0
+    dirtyMsg        BYTE "Dirty Flag: ", 0
+
+    separator       BYTE "---", 0Dh, 0Ah, 0
+    item1Msg        BYTE "Item [1]: ", 0
+    idMsg           BYTE "  ID: ", 0
+    nameMsg         BYTE "  Name: ", 0
+    quantityMsg     BYTE "  Quantity: ", 0
+    notesMsg        BYTE "  Notes: ", 0
+
+    txtFile1Msg     BYTE "Text File [1]: ", 0
+    fileIdMsg       BYTE "  File ID: ", 0
+    filenameMsg     BYTE "  Filename: ", 0
+    pathMsg         BYTE "  Path: ", 0
+    linkedIdMsg     BYTE "  Linked Item ID: ", 0
+
+    ; Local data for testing
+    header          AccountHeader <>
+    items           Item MAX_ITEMS DUP(<>)
+    txtFiles        TxtFile MAX_TXT_FILES DUP(<>)
+    dirtyFlag       DWORD 0
+    isAuthenticated DWORD 0
+    currentUser     BYTE EMAIL_SIZE DUP(0)
+
+; Macro for copying strings
+CopyString MACRO source, dest, len
+    LOCAL copyLoop
+    mov esi, source
+    mov edi, dest
+    mov ecx, len
+copyLoop:
+    mov al, BYTE PTR [esi]
+    mov BYTE PTR [edi], al
+    inc esi
+    inc edi
+    loop copyLoop
+    mov BYTE PTR [edi], 0      ; null terminator
+ENDM
+
+.CODE
+main PROC
+    call Clrscr
+
+    ; Print header
+    mov edx, OFFSET headerMsg
+    call WriteString
+
+    ; ============================================
+    ; Test 1: Display Account Header
+    ; ============================================
+    mov edx, OFFSET separator
+    call WriteString
+
+    ; Display current email
+    mov edx, OFFSET emailMsg
+    call WriteString
+    mov edx, OFFSET currentUser
+    call WriteString
+    call Crlf
+
+    ; Display PIN
+    mov edx, OFFSET pinMsg
+    call WriteString
+    mov eax, DWORD PTR [OFFSET header]
+    call WriteDec
+    call Crlf
+
+    ; Display Backup Code
+    mov edx, OFFSET backupMsg
+    call WriteString
+    mov eax, DWORD PTR [OFFSET header + 68]  ; After email (64 bytes)
+    call WriteDec
+    call Crlf
+
+    ; Display Item Count
+    mov edx, OFFSET itemCountMsg
+    call WriteString
+    mov eax, DWORD PTR [OFFSET header + 76]  ; PIN + Backup Code = 8 bytes
+    call WriteDec
+    call Crlf
+
+    ; Display Text File Count
+    mov edx, OFFSET txtCountMsg
+    call WriteString
+    mov eax, DWORD PTR [OFFSET header + 80]
+    call WriteDec
+    call Crlf
+
+    ; Display Authentication Status
+    mov edx, OFFSET authMsg
+    call WriteString
+    mov eax, DWORD PTR [OFFSET isAuthenticated]
+    call WriteDec
+    call Crlf
+
+    ; Display Dirty Flag
+    mov edx, OFFSET dirtyMsg
+    call WriteString
+    mov eax, DWORD PTR [OFFSET dirtyFlag]
+    call WriteDec
+    call Crlf
+
+    ; ============================================
+    ; Test 2: Initialize and Display First Item
+    ; ============================================
+    mov edx, OFFSET separator
+    call WriteString
+    mov edx, OFFSET item1Msg
+    call WriteString
+    call Crlf
+
+    ; Initialize first item
+    mov eax, 1
+    mov DWORD PTR [OFFSET items + 0], eax      ; ID = 1
+
+    CopyString OFFSET testName, (OFFSET items + 4), 9
+
+    mov eax, 5
+    mov DWORD PTR [OFFSET items + 68], eax     ; quantity field offset (64 + 4)
+
+    CopyString OFFSET testNotes, (OFFSET items + 72), 19
+
+    ; Display Item 1 ID
+    mov edx, OFFSET idMsg
+    call WriteString
+    mov eax, DWORD PTR [OFFSET items + 0]
+    call WriteDec
+    call Crlf
+
+    ; Display Item 1 Name
+    mov edx, OFFSET nameMsg
+    call WriteString
+    mov edx, OFFSET items + 4
+    call WriteString
+    call Crlf
+
+    ; Display Item 1 Quantity
+    mov edx, OFFSET quantityMsg
+    call WriteString
+    mov eax, DWORD PTR [OFFSET items + 68]
+    call WriteDec
+    call Crlf
+
+    ; Display Item 1 Notes
+    mov edx, OFFSET notesMsg
+    call WriteString
+    mov edx, OFFSET items + 72
+    call WriteString
+    call Crlf
+
+    ; ============================================
+    ; Test 3: Initialize and Display First Text File
+    ; ============================================
+    mov edx, OFFSET separator
+    call WriteString
+    mov edx, OFFSET txtFile1Msg
+    call WriteString
+    call Crlf
+
+    ; Calculate TxtFile structure size: 4 + 64 + 128 + 4 = 200 bytes
+    mov eax, 101
+    mov DWORD PTR [OFFSET txtFiles + 0], eax   ; fileID = 101
+
+    CopyString OFFSET testFilename, (OFFSET txtFiles + 4), 12
+
+    CopyString OFFSET testPath, (OFFSET txtFiles + 68), 21
+
+    mov eax, 1
+    mov DWORD PTR [OFFSET txtFiles + 196], eax ; linkedID field (at offset 196)
+
+    ; Display Text File 1 ID
+    mov edx, OFFSET fileIdMsg
+    call WriteString
+    mov eax, DWORD PTR [OFFSET txtFiles + 0]
+    call WriteDec
+    call Crlf
+
+    ; Display Text File 1 Filename
+    mov edx, OFFSET filenameMsg
+    call WriteString
+    mov edx, OFFSET txtFiles + 4
+    call WriteString
+    call Crlf
+
+    ; Display Text File 1 Path
+    mov edx, OFFSET pathMsg
+    call WriteString
+    mov edx, OFFSET txtFiles + 68
+    call WriteString
+    call Crlf
+
+    ; Display Text File 1 Linked ID
+    mov edx, OFFSET linkedIdMsg
+    call WriteString
+    mov eax, DWORD PTR [OFFSET txtFiles + 196]
+    call WriteDec
+    call Crlf
+
+    ; ============================================
+    ; Exit
+    ; ============================================
+    mov edx, OFFSET separator
+    call WriteString
+    mov edx, OFFSET newline
+    call WriteString
+
+    call WaitMsg
+    exit
+main ENDP
+
+END main

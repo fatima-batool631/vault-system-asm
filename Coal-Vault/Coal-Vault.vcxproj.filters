@@ -36,6 +36,9 @@
     <MASM Include="vault_file.asm">
       <Filter>Source Files</Filter>
     </MASM>
+    <MASM Include="vault_data_test.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">

@@ -1,5 +1,1 @@
-﻿vault_items.obj : error LNK2019: unresolved external symbol _header referenced in function __AddItem@0
-vault_items.obj : error LNK2019: unresolved external symbol _items referenced in function _GetItemPtr@0
-vault_items.obj : error LNK2019: unresolved external symbol _dirtyFlag referenced in function __AddItem@0
-MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol _main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
-D:\SEM 04\LABS\Computer Organization & Assembly Language\vault-system-asm\Coal-Vault\Debug\Coal-Vault.exe : fatal error LNK1120: 4 unresolved externals
+﻿  Coal-Vault.vcxproj -> C:\Users\rasib\source\repos\vault-system-asm\Coal-Vault\Debug\Coal-Vault.exe
