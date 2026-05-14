@@ -41,9 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9D66A532-E6BE-4CC9-B198-8C9F07309B85}|Coal-Vault.vcxproj|C:\\Users\\rasib\\source\\repos\\vault-system-asm\\Coal-Vault\\vault_auth.asm||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{9D66A532-E6BE-4CC9-B198-8C9F07309B85}|Coal-Vault.vcxproj|solutionrelative:vault_auth.asm||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rasib\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\331939732\\vault_data_test.asm||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -53,23 +50,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "vault_data_test.asm",
-              "DocumentMoniker": "C:\\Users\\rasib\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\331939732\\vault_data_test.asm",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\331939732\\vault_data_test.asm",
-              "ToolTip": "C:\\Users\\rasib\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\331939732\\vault_data_test.asm",
-              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\331939732\\vault_data_test.asm",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-05-14T09:41:11.128Z"
             },
             {
               "$type": "Document",
@@ -106,8 +91,7 @@
               "RelativeToolTip": "main.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-05-08T07:21:03.423Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-08T07:21:03.423Z"
             },
             {
               "$type": "Document",
@@ -115,9 +99,9 @@
               "Title": "vault_file.asm",
               "DocumentMoniker": "C:\\Users\\rasib\\source\\repos\\vault-system-asm\\Coal-Vault\\vault_file.asm",
               "RelativeDocumentMoniker": "vault_file.asm",
-              "ToolTip": "C:\\Users\\rasib\\source\\repos\\vault-system-asm\\Coal-Vault\\vault_file.asm*",
-              "RelativeToolTip": "vault_file.asm*",
-              "ViewState": "AgIAAGcBAAAAAAAAAAAUwHcBAAADAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\rasib\\source\\repos\\vault-system-asm\\Coal-Vault\\vault_file.asm",
+              "RelativeToolTip": "vault_file.asm",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-05-08T07:12:18.051Z",
               "EditorCaption": ""

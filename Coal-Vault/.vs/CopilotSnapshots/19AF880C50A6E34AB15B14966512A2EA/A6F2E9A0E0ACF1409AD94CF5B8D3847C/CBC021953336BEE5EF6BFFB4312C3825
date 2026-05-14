@@ -1,4 +1,4 @@
-INCLUDE C:\irvine\Irvine32.inc
+﻿INCLUDE C:\irvine\Irvine32.inc
 INCLUDELIB C:\irvine\Irvine32.lib
 INCLUDELIB C:\irvine\kernel32.lib
 INCLUDELIB C:\irvine\user32.lib
