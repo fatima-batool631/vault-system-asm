@@ -84,11 +84,11 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>Irvine32.lib;kernel32.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\irvine</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Irvine32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Irvine\irvine;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <MASM>
-      <IncludePaths>C:\irvine</IncludePaths>
+      <IncludePaths>C:\Irvine\irvine;%(IncludePaths)</IncludePaths>
       <GeneratePreprocessedSourceListing>true</GeneratePreprocessedSourceListing>
     </MASM>
   </ItemDefinitionGroup>
@@ -144,7 +144,7 @@
     </MASM>
     <MASM Include="vault_data_test.asm" />
     <MASM Include="vault_email.asm">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </MASM>
     <MASM Include="vault_exports.asm">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
