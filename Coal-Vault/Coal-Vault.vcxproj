@@ -84,11 +84,11 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>Irvine32.lib;kernel32.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\irvine</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Irvine32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Irvine\irvine;C:\irvine</AdditionalLibraryDirectories>
     </Link>
     <MASM>
-      <IncludePaths>C:\irvine</IncludePaths>
+      <IncludePaths>C:\Irvine\irvine</IncludePaths>
       <GeneratePreprocessedSourceListing>true</GeneratePreprocessedSourceListing>
     </MASM>
   </ItemDefinitionGroup>
@@ -118,7 +118,12 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Irvine\irvine;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Irvine32.lib</AdditionalDependencies>
     </Link>
+    <MASM>
+      <IncludePaths>C:\Irvine\irvine</IncludePaths>
+    </MASM>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -150,13 +155,17 @@
     </MASM>
     <MASM Include="vault_file.asm">
       <ObjectFileName>$(IntDir)%(Filename).obj</ObjectFileName>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </MASM>
     <MASM Include="vault_items.asm">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </MASM>
     <MASM Include="vault_txtfile.asm">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Irvine\irvine;%(IncludePaths)</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Irvine\irvine;%(IncludePaths)</IncludePaths>
     </MASM>
   </ItemGroup>
   <ItemGroup>
@@ -169,6 +178,9 @@
     <ClInclude Include="vault_gui.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Irvine32.inc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
