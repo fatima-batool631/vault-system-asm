@@ -81,8 +81,7 @@
               "RelativeToolTip": "vault_data.asm",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-05-12T12:02:40.071Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-12T12:02:40.071Z"
             },
             {
               "$type": "Document",
@@ -106,8 +105,7 @@
               "RelativeToolTip": "main.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-05-08T07:21:03.423Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-08T07:21:03.423Z"
             },
             {
               "$type": "Document",
@@ -115,9 +113,9 @@
               "Title": "vault_file.asm",
               "DocumentMoniker": "C:\\Users\\rasib\\source\\repos\\vault-system-asm\\Coal-Vault\\vault_file.asm",
               "RelativeDocumentMoniker": "vault_file.asm",
-              "ToolTip": "C:\\Users\\rasib\\source\\repos\\vault-system-asm\\Coal-Vault\\vault_file.asm*",
-              "RelativeToolTip": "vault_file.asm*",
-              "ViewState": "AgIAAGcBAAAAAAAAAAAUwHcBAAADAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\rasib\\source\\repos\\vault-system-asm\\Coal-Vault\\vault_file.asm",
+              "RelativeToolTip": "vault_file.asm",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-05-08T07:12:18.051Z",
               "EditorCaption": ""

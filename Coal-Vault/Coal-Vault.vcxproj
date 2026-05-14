@@ -142,7 +142,6 @@
     <MASM Include="vault_data.asm">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </MASM>
-    <MASM Include="vault_data_test.asm" />
     <MASM Include="vault_email.asm">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </MASM>
