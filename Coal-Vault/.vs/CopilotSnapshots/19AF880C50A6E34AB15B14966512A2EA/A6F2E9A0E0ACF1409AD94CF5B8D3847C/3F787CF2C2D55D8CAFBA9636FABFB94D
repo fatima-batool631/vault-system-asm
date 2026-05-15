@@ -1,11 +1,11 @@
-INCLUDE C:\irvine\Irvine32.inc
+﻿INCLUDE C:\irvine\Irvine32.inc
 INCLUDELIB C:\irvine\Irvine32.lib
 INCLUDELIB C:\irvine\kernel32.lib
 INCLUDELIB C:\irvine\user32.lib
 
-EXTERN header:BYTE
-EXTERN items:BYTE
-EXTERN txtFiles:BYTE
+EXTERN header:AccountHeader
+EXTERN items:Item
+EXTERN txtFiles:TxtFile
 EXTERN dirtyFlag:DWORD
 EXTERN isAuthenticated:DWORD
 
