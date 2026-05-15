@@ -1,0 +1,12 @@
+.vs/
+Debug/
+*.db
+*.VC.db
+*.opendb
+*.obj
+*.pdb
+*.ilk
+*.tlog
+*.log
+*.recipe
+*.idb
