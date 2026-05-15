@@ -1,2 +1,5 @@
-// Entry point - intentionally empty
-// The actual code is in vault_data_test.asm
+// Entry point - provide a minimal main for the linker
+int main()
+{
+    return 0;
+}
