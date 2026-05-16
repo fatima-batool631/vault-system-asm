@@ -21,3 +21,10 @@ x86/
 *.idb
 *.ilk
 *.exe
+
+.vs/
+Debug/
+*.db
+*.pdb
+*.suo
+*.sqlite
